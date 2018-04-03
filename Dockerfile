@@ -23,10 +23,6 @@ RUN set -ex \
 	# ----------
 	&& rm -rf /var/cache/apk/* 
 
-
-RUN apt-get install -y --no-install-recommends openssh-server \
-    && echo "root:Docker!" | chpasswd
-
 # =========
 # Configure
 # =========

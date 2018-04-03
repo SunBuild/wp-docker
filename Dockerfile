@@ -32,8 +32,6 @@ COPY httpd-wordpress.conf $HTTPD_CONF_DIR/
 ENV GIT_REPO=https://github.com/WordPress/WordPress.git 
 
 COPY wp-config.php wprun.sh /var/wwww
-COPY sshd_config /etc/ssh/
-
 
 COPY wprun.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/wprun.sh
